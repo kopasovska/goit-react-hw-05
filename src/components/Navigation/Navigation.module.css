@@ -1,0 +1,32 @@
+.navigation {
+    height: 56px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0 32px;
+
+    background-color: #fff;
+    box-shadow: 0 1px 10px rgb(136, 136, 247);
+  }
+  
+  .navigationNav {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 16px;
+  }
+  
+  .navigationLink {
+    font-weight: 400;
+    font-size: 20px;
+    color: #00f;
+  }
+  
+  .active {
+    text-decoration: wavy underline #00f;
+  }
+  

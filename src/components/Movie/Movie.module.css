@@ -1,0 +1,130 @@
+.movieDetails {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    flex-wrap: wrap;
+
+    @media (min-width: 768px) {
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+
+    @media (min-width: 1024px) {
+          max-width: 1000px;
+          margin: 0 auto;
+    } 
+}
+
+.posterContainer {
+    box-shadow: 0 0 5px rgb(136, 136, 247);
+    border-radius: 8px;
+    padding: 16px;
+    max-width: 280px;
+    height: auto;
+    flex: 1 1 100%;
+
+    @media (min-width: 768px) {
+        max-width: 300px;
+        flex-shrink: 0;
+    }
+
+    @media (min-width: 1024px) {
+        max-width: 374px;
+    }
+}
+
+.poster {
+    width: 100%;
+    object-fit: cover;
+}
+
+.movieInfo {
+    padding: 24px;
+
+    box-shadow: 0 0 5px rgb(136, 136, 247);
+    border-radius: 8px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+    min-width: 280px;
+    flex: 1 1 100%;
+
+    @media (min-width: 768px) {
+        min-width: 0;
+        flex: 1;
+    }
+
+}
+
+.movieTitle {
+    color: #00f;
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 1;
+}
+
+.movieText {
+    color:rgb(147, 147, 185);
+    font-size: 14px;
+    font-weight: 200;
+    line-height: 1.8;
+}
+
+.movieAccentText {
+    color: #00f;
+    font-size: 14px;
+    font-weight: 200;
+    line-height: 1.8;
+    margin-right: 8px;
+}
+
+.genresList {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.genresItem {
+    border: 0.8px solid rgb(136, 136, 247);
+    border-radius: 16px;
+
+    color: #00f;
+    font-size: 14px;
+
+    padding: 4px 16px;
+}
+
+.movieSubtitle {
+    color: #00f;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 1.2;
+}
+
+.detailsList {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.detailsItem {
+    width: 100%;
+    border-top: 0.8px solid rgb(136, 136, 247);
+    padding: 8px 0;
+
+    display: flex;
+    align-items: center;
+}
+
+.detailsItem:last-child {
+    border-bottom: 0.8px solid rgb(136, 136, 247);
+}
+
+.star {
+    color: rgb(249, 208, 3);
+    margin-right: 8px;
+}

@@ -1,0 +1,61 @@
+.movieCastList {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    align-items: center;
+    overflow: visible;
+}
+
+.movieCastItem {
+    display: flex !important;
+    flex-direction: column;
+    gap: 4px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.avatar{
+    width: 118px;
+    height: 118px;
+    border-radius: 50%;
+    object-fit: cover;
+
+@media (min-width: 768px) {
+    width: 150px;
+    height: 150px;
+}
+
+@media (min-width: 1024px) {
+    width: 200px;
+    height: 200px;
+}
+}
+
+.actorName {
+    text-align: center;
+    color: rgb(112, 112, 192);
+    font-weight: 200;
+    font-size: 14px;
+}
+
+.prevArrow {
+    left: 0 !important;
+    color: #00f !important;
+    z-index: 1000 !important;
+
+    &:hover,
+    &:focus {
+        color: rgb(251, 0, 167) !important;
+    }
+}
+
+.nextArrow {
+    right: 0 !important;
+    color: #00f !important;
+
+    &:hover,
+    &:focus {
+        color: rgb(251, 0, 167) !important;
+    }
+}
